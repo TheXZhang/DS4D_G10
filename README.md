@@ -1,1 +1,1 @@
-# DS4D group 10 project, Gender Peace Agreements
+# DS4D G10: Gender Peace Agreements
