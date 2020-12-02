@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="5ba82378f55d4c219b1d895e77545d16" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="abd479f45f664ea68b0feaf81320a1fa" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_5ba82378f55d4c219b1d895e77545d16 = echarts.init(
-            document.getElementById('5ba82378f55d4c219b1d895e77545d16'), 'white', {renderer: 'canvas'});
-        var option_5ba82378f55d4c219b1d895e77545d16 = {
+        var chart_abd479f45f664ea68b0feaf81320a1fa = echarts.init(
+            document.getElementById('abd479f45f664ea68b0feaf81320a1fa'), 'light', {renderer: 'canvas'});
+        var option_abd479f45f664ea68b0feaf81320a1fa = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -20,73 +20,37 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
-    "color": [
-        "#c23531",
-        "#2f4554",
-        "#61a0a8",
-        "#d48265",
-        "#749f83",
-        "#ca8622",
-        "#bda29a",
-        "#6e7074",
-        "#546570",
-        "#c4ccd3",
-        "#f05b72",
-        "#ef5b9c",
-        "#f47920",
-        "#905a3d",
-        "#fab27b",
-        "#2a5caa",
-        "#444693",
-        "#726930",
-        "#b2d235",
-        "#6d8346",
-        "#ac6767",
-        "#1d953f",
-        "#6950a1",
-        "#918597"
-    ],
     "series": [
         {
             "type": "bar",
-            "name": "WGG count",
+            "name": "product1",
             "legendHoverLink": true,
             "data": [
-                3,
-                9,
-                6,
-                11,
-                12,
-                12,
-                14,
-                5,
-                8,
-                12,
-                8,
-                10,
-                11,
-                17,
-                14,
-                10,
-                19,
-                11,
-                21,
-                8,
-                8,
-                16,
-                13,
-                20,
-                21,
-                26,
-                22,
-                6,
-                10,
-                6,
-                2
+                {
+                    "value": 12,
+                    "percent": 0.8
+                },
+                {
+                    "value": 23,
+                    "percent": 0.5227272727272727
+                },
+                {
+                    "value": 33,
+                    "percent": 0.868421052631579
+                },
+                {
+                    "value": 3,
+                    "percent": 0.05454545454545454
+                },
+                {
+                    "value": 33,
+                    "percent": 0.4342105263157895
+                }
             ],
             "showBackground": false,
+            "stack": "stack1",
             "barMinHeight": 0,
-            "barCategoryGap": "20%",
+            "barCategoryGap": "50%",
             "barGap": "30%",
             "large": false,
             "largeThreshold": 400,
@@ -97,50 +61,47 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
-                "margin": 8
+                "position": "right",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         },
         {
             "type": "bar",
-            "name": "PA-X count",
+            "name": "product2",
             "legendHoverLink": true,
             "data": [
-                44,
-                84,
-                83,
-                92,
-                93,
-                65,
-                66,
-                72,
-                66,
-                85,
-                60,
-                58,
-                53,
-                51,
-                46,
-                30,
-                63,
-                43,
-                64,
-                47,
-                32,
-                51,
-                62,
-                43,
-                79,
-                69,
-                78,
-                73,
-                75,
-                33,
-                8
+                {
+                    "value": 3,
+                    "percent": 0.2
+                },
+                {
+                    "value": 21,
+                    "percent": 0.4772727272727273
+                },
+                {
+                    "value": 5,
+                    "percent": 0.13157894736842105
+                },
+                {
+                    "value": 52,
+                    "percent": 0.9454545454545454
+                },
+                {
+                    "value": 43,
+                    "percent": 0.5657894736842105
+                }
             ],
             "showBackground": false,
+            "stack": "stack1",
             "barMinHeight": 0,
-            "barCategoryGap": "20%",
+            "barCategoryGap": "50%",
             "barGap": "30%",
             "large": false,
             "largeThreshold": 400,
@@ -151,20 +112,27 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
-                "margin": 8
+                "position": "right",
+                "margin": 8,
+                "formatter": function(x){return Number(x.data.percent * 100).toFixed() + '%';}
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
     "legend": [
         {
             "data": [
-                "WGG count",
-                "PA-X count"
+                "product1",
+                "product2"
             ],
             "selected": {
-                "WGG count": true,
-                "PA-X count": true
+                "product1": true,
+                "product2": true
             },
             "show": true,
             "padding": 5,
@@ -212,37 +180,11 @@
                 }
             },
             "data": [
-                1990,
-                1991,
-                1992,
-                1993,
-                1994,
-                1995,
-                1996,
-                1997,
-                1998,
-                1999,
-                2000,
-                2001,
-                2002,
-                2003,
-                2004,
-                2005,
-                2006,
-                2007,
-                2008,
-                2009,
-                2010,
-                2011,
-                2012,
-                2013,
-                2014,
-                2015,
-                2016,
-                2017,
-                2018,
-                2019,
-                2020
+                1,
+                2,
+                3,
+                4,
+                5
             ]
         }
     ],
@@ -271,6 +213,7 @@
     ],
     "title": [
         {
+            "text": "Bar-DataZoom\uff08inside\uff09",
             "padding": 5,
             "itemGap": 10
         }
@@ -286,7 +229,7 @@
         "filterMode": "filter"
     }
 };
-        chart_5ba82378f55d4c219b1d895e77545d16.setOption(option_5ba82378f55d4c219b1d895e77545d16);
+        chart_abd479f45f664ea68b0feaf81320a1fa.setOption(option_abd479f45f664ea68b0feaf81320a1fa);
     </script>
 </body>
 </html>
