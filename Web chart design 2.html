@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="aaebad732d08413ea9cc1937f15dd20d" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_aaebad732d08413ea9cc1937f15dd20d = echarts.init(
+            document.getElementById('aaebad732d08413ea9cc1937f15dd20d'), 'white', {renderer: 'canvas'});
+        var option_aaebad732d08413ea9cc1937f15dd20d = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+"#b44038",
+         "#334553",
+        
+        "#6f9fa7",
+        "#c9856b",
+        "#7d9d85"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "GeMe",
+                    "value": 20.0
+                },
+                {
+                    "name": "GeWom",
+                    "value": 80.0
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 8,
+                "formatter":     function(params) {        if(params.name == 'GeWom')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "GAge",
+                    "value": 31.0
+                },
+                {
+                    "name": "GeWom",
+                    "value": 69.0
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "55%",
+                "30%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 14,
+                "formatter":     function(params) {        if(params.name == 'GeWom')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "GCh",
+                    "value": 62.0
+                },
+                {
+                    "name": "GeWom",
+                    "value": 38.0
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "20%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 12,
+                "formatter":     function(params) {        if(params.name == 'GeWom')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "GDis",
+                    "value": 41.0
+                },
+                {
+                    "name": "GeWom",
+                    "value": 59.0
+                }
+            ],
+            "radius": [
+                50,
+                80
+            ],
+            "center": [
+                "55%",
+                "70%"
+            ],
+            "label": {
+                "show": true,
+                "position": "center",
+                "margin": 12,
+                "formatter":     function(params) {        if(params.name == 'GeWom')            return '\n\n\n' + params.name + ' : ' + params.value + '%';        return params.name + ' : ' + params.value + '%';    }    
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                 "GeWom",
+                 "GeMe",
+                "GAge",
+                "GCh",
+                "GDis"
+            ],
+            "selected": {},
+            "type": "scroll",
+            "show": true,
+            "left": "80%",
+            "top": "20%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_aaebad732d08413ea9cc1937f15dd20d.setOption(option_aaebad732d08413ea9cc1937f15dd20d);
+    </script>
+</body>
+</html>
