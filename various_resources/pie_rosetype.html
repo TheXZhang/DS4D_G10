@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/vintage.js"></script>
+
+    
+</head>
+<body>
+    <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  }; </style>
+    <div class="box">
+                <div id="51b4522f58254982bc51faa4cd944f87" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_51b4522f58254982bc51faa4cd944f87 = echarts.init(
+            document.getElementById('51b4522f58254982bc51faa4cd944f87'), 'vintage', {renderer: 'canvas'});
+        var option_51b4522f58254982bc51faa4cd944f87 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Africa (excl MENA)",
+                    "value": 0.293
+                },
+                {
+                    "name": "Europe and Eurasia",
+                    "value": 0.175
+                },
+                {
+                    "name": "Asia and Pacific",
+                    "value": 0.119
+                },
+                {
+                    "name": "Middle East and North Africa",
+                    "value": 0.152
+                },
+                {
+                    "name": "Americas",
+                    "value": 0.2
+                },
+                {
+                    "name": "Cross-regional",
+                    "value": 0.105
+                }
+            ],
+            "radius": [
+                "20%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "area",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{b}:{c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Africa (excl MENA)",
+                "Europe and Eurasia",
+                "Asia and Pacific",
+                "Middle East and North Africa",
+                "Americas",
+                "Cross-regional"
+            ],
+            "selected": {},
+            "show": true,
+            "top": 30,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "1990-2020 The proportion of gender perspectives in peace agreements",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_51b4522f58254982bc51faa4cd944f87.setOption(option_51b4522f58254982bc51faa4cd944f87);
+    </script>
+<br/>                <div id="b6bef96e1ee4464583e54ea123a5e101" class="chart-container" style="width:1000px; height:200px;"></div>
+    <script>
+        var chart_b6bef96e1ee4464583e54ea123a5e101 = echarts.init(
+            document.getElementById('b6bef96e1ee4464583e54ea123a5e101'), 'vintage', {renderer: 'canvas'});
+        var option_b6bef96e1ee4464583e54ea123a5e101 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "Gender related",
+            "legendHoverLink": true,
+            "data": [
+                171,
+                72,
+                45,
+                40,
+                39,
+                4
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "All Peace agreement",
+            "legendHoverLink": true,
+            "data": [
+                584,
+                411,
+                377,
+                263,
+                195,
+                38
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Gender related",
+                "All Peace agreement"
+            ],
+            "selected": {
+                "Gender related": true,
+                "All Peace agreement": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": -15,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "Africa (excl MENA)",
+                "Europe and Eurasia",
+                "Asia and Pacific",
+                "Middle East and North Africa",
+                "Americas",
+                "Cross-regional"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_b6bef96e1ee4464583e54ea123a5e101.setOption(option_b6bef96e1ee4464583e54ea123a5e101);
+    </script>
+<br/>    </div>
+    <script>
+    </script>
+</body>
+</html>
